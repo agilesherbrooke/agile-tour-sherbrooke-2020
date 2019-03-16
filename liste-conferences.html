@@ -139,6 +139,64 @@
         border-radius: 50%;
       }
       /* END - MAIN */
+
+      /* BEGIN - FOOTER */
+      .row {
+        justify-content: center;
+      }
+      
+      .partners {
+        background: #294350;
+        color: #fff;
+        padding-bottom: 50px;
+      }
+      
+      .partners-header {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .partner-divider {
+        border-top: 1px solid rgba(255, 255, 255, 0.21);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        width: 60%;
+      }
+
+      @media (max-width: 992px) {
+        .partner-divider {
+          width: 80%;
+        }
+      }
+
+      .partners h2 {
+        font-size: 2rem;
+      }
+
+      .partners h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      img.partner {
+        width: 100%;
+      }
+
+      .platinum {
+        color: #e5e4e2;
+      }
+
+      .or {
+        color: #ffd700;
+      }
+
+      .silver {
+        color: #C0C0C0;
+      }
+
+      .bronze {
+        color: #CD7F32;
+      }
+      /* END - FOOTER */
     </style>
   </head>
   <body>
@@ -163,7 +221,6 @@
       <div>
         <a class="anchor" href="#AlexandreBeaudet">⚓</a>
         <h2 id="AlexandreBeaudet">Le UX, c'est vraiment utile? Le UX vu par un PO</h2>
-        <span class="by">Par Alexandre Beaudet, Université de Sherbrooke</span>
         <div>
             <p>La première fois qu'on m'a parlé
             d'expérience utilisateur, je me suis dit que
@@ -231,22 +288,52 @@
 
       </div>
     </main>
-      <!--
-        <div class="partners text-center">
+    
+    <footer class="partners text-center">
         <img class="partners-header" src="assets/partners-header.png">
         <div class="container">
-          <h1 class="partners-title">Partenaires Platine</h1>
-          <hr class="partner-divider">
+          <h2>Partenaires</h2>
+          <h3 class="partners-title platinum">Platine</h3>
           <div class="row">
-            <div class="col-sm-12"></div>
+            <div class="col-6">
+                <a href="" rel="noopener" target="_blank">
+                  <img class="partner" src="assets/partners/pyxis-studio-white-logo.png"/>
+                </a>
+            </div>
           </div>
-          <h1 class="partners-title">Partenaires Or</h1>
           <hr class="partner-divider">
+          
+          <h3 class="partners-title or">Or</h3>
           <div class="row">
-            <div class="col-sm-12"></div>
+            <div class="col-4">
+                <a href="" rel="noopener" target="_blank">
+                  <img class="partner" src="assets/partners/sherbrooke-innopole-white-logo.png"/>
+                </a>
+            </div>
+            <div class="col-4">
+              <a href="" rel="noopener" target="_blank">
+                <img class="partner" src="assets/partners/sherweb-white-logo.png"/>
+              </a>
+            </div>
+            <div class="col-4">
+                <a href="" rel="noopener" target="_blank">
+                  <img class="partner" src="assets/partners/udes-white-logo.png"/>
+                </a>
+              </div>
           </div>
+          <!--<hr class="partner-divider">
+  
+          <h3 class="partners-title silver">Argent</h3>
+          <div class="row">
+            <div class="col-3"></div>
+          </div>
+          <hr class="partner-divider">
+  
+          <h3 class="partners-title bronze">Bronze</h3>
+          <div class="row">
+            <div class="col-2"></div>
+          </div>-->
         </div>
-      </div>-->
-    <footer></footer>
+      </footer>
   </body>
 </html>

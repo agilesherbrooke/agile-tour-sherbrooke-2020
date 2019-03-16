@@ -15,86 +15,71 @@
       gtag('js', new Date());
       gtag('config', 'UA-112909617-2');
     </script>
-    <style type="text/css">@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);</style>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <style type="text/css">
-    header {
-      background: #000;
-      background: url(assets/header-background.png);
-      background-size: cover;
-      background-position-x: 33%;
-      position: relative;
-      height: 554px;
-    }
-    @media (max-width: 600px) {
-        header {
-            height: 300px;
-    }
- }
-  @media (min-width: 600px) and (max-width: 992px) {
+      /* BEGIN - HEADER */
       header {
+        background: #000;
+        background: url(assets/header-background.png);
+        background-size: cover;
+        background-position-x: 33%;
+        position: relative;
+        height: 554px;
+      }
+      
+      @media (max-width: 600px) {
+        header {
+          height: 300px;
+        }
+      }
+      
+      @media (min-width: 600px) and (max-width: 992px) {
+        header {
           height: 410px;
-     }
- }
-  header .header-title {
-      float: right;
-      z-index: 1;
- }
-  header .header-title img {
-      margin-top: 200px;
-      max-width: 600px;
-      width: 100%;
- }
-  @media (max-width: 480px) {
+        }
+      }
+
+      header .header-title {
+        float: right;
+        z-index: 1;
+      }
+
       header .header-title img {
+        margin-top: 200px;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        header .header-title img {
           margin-top: 80px;
-     }
- }
-  @media (min-width: 480px) and (max-width: 600px) {
-      header .header-title img {
+        }
+      }
+
+      @media (min-width: 480px) and (max-width: 600px) {
+        header .header-title img {
           margin-top: 65px;
           max-width: 450px;
-     }
- }
-  @media (min-width: 600px) and (max-width: 992px) {
-      header .header-title img {
+        }
+      }
+
+      @media (min-width: 600px) and (max-width: 992px) {
+        header .header-title img {
           margin-top: 135px;
           max-width: 500px;
-     }
- }
-  header .header-title .btn {
-      float: right;
-      margin-top: 8px;
-      border-radius: 3px;
-      font-weight: 600;
-      height: 42px;
-      line-height: 28px;
-      max-width: 286px;
-      width: 100%;
-      z-index: 2;
- }
-  @media (max-width: 480px) {
-      header .header-title .btn {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          margin: 0;
-          max-width: 480px;
-          border-radius: 0;
-     }
- }
-  @media (min-width: 480px) and (max-width: 600px) {
-      header .header-title .btn {
-          height: initial;
-          line-height: initial;
-          max-width: 212px;
-     }
- }
-  header .header-footer {
-      position: absolute;
-      bottom: -5px;
-      width: 100%;
-      z-index: 0;
- }
+        }
+      }
+
+      header .header-footer {
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        z-index: 0;
+      }
+      /* END - HEADER */
+
   main .keynote {
       background: #efefef;
  }
@@ -278,245 +263,10 @@
   main .summary .include {
       margin-top: 2rem;
  }
-  main .summary .btn {
-      border-radius: 3px;
-      font-weight: 600;
-      height: 42px;
-      line-height: 28px;
-      margin-bottom: 20px;
-      max-width: 360px;
-      width: 100%;
- }
-  @media (max-width: 480px) {
-      main .summary .btn {
-          display: none;
-     }
- }
-  main .summary .summary-exclude {
-      text-indent: -0.6em;
-      padding-left: 0.6em;
- }
-  main .partners {
-      background: #294350;
-      color: #fff;
-      padding-bottom: 50px;
- }
-  main .partners .partners-header {
-      width: 100%;
-      margin-bottom: 20px;
- }
-  main .partners .partners-title {
-      margin-bottom: 30px;
- }
-  main .partners .partner-divider {
-      border-top: 1px solid rgba(255, 255, 255, 0.21);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.14);
-      width: 60%;
- }
-  @media (max-width: 992px) {
-      main .partners .partner-divider {
-          width: 80%;
-     }
- }
-  main .partners .partners-pyxis, main .partners .partners-genetec, main .partners .partners-innopole {
-      margin: 20px 0;
-      max-width: 450px;
-      width: 100%;
- }
-  main .partners .partners-levio {
-      margin: 20px 0;
-      max-width: 250px;
-      width: 100%;
- }
-  main .partners .partners-acceo, main .partners .partners-facilite {
-      margin: 20px 0;
-      max-width: 250px;
- }
-  @media (max-width: 600px) {
-      main .partners .partners-acceo, main .partners .partners-facilite {
-          width: 60%;
-     }
- }
-  main .partners .partners-wolters-kluwer {
-      margin: 20px 0;
-      max-height: 70px;
- }
-  @media (max-width: 600px) {
-      main .partners .partners-wolters-kluwer {
-          width: 75%;
-     }
- }
-  @media (min-width: 992px) {
-      main .partners .partners-acceo {
-          float: right;
-     }
-      main .partners .partners-facilite {
-          float: left;
-     }
- }
-  .modal-header, .modal-footer {
-      border: 0;
- }
-  .modal-header {
-      padding-bottom: 0;
- }
-  .modal-body {
-      padding: 0;
- }
-  .modal-footer {
-      padding-top: 0;
- }
-  .modal-header, .conference-header {
-      background-color: #efefef;
- }
-  .conference-header {
-      background-image: url(data:image/png;
-     base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAAoCAIAAABhOZSlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwxJREFUeNrs3duOokAUQFFQ/P9P9dEoOk6FSlcqgApeuaz1YIjTk3RIt6ndB4pyv98XAADA+lyv1/TKOlVOAQAArDAFdSCCEAAAdCCCEAAAWG4HFi4NRRACAIAOBEEIAABLTkEdiCAEAAAdCIIQAACW24GFS0MRhAAAoANBEAIAwJJTUAciCIHBv+rV+3/Zy7Lcbref+G43jfmemWU7n8+vL2Iul8vwrw9f/HDRM+RrAHQgCEK4Vx0hb0LkfD9LNAlr++PCbrf75vd8Jxd7+/ZfQ3MCk+rAwqWhCEJoBdudbOuuWb85dAKm9tHxib7tdmMrL1sN+fpwFdCBIAiZU6pFdy4svPVPn7sWEeBdun9mGp6XeSvmYZkfC0jQgU4FgpDn62j4uuROy91Z9wDwtFGf6qkS0+2X6aD36lZAB8KI1qjr2lmYVMgBwFhx5BhDMeWiGSPoQHjcLH74AGAlrVhkQ0XTRdCBIAgBYO26l6QW2XRRN4IORBACAPRXYr5BjotU4ZZ4G5GFN4IQAFi+fNioHlnvOrssq6ra7Xbh1eZ8CEIAAPXI8lWN0IE2F0QQAgC8U++jGntvg4TvR2DkbCAIAQB+LOVimjSmd8wbed32TyhAk0AEIQDAzKS5YuzD2I12VaXXphFvBYwHzgmCEABgmWIchlAMcXhpOCdr6L3WcTwoy9IAEEEIALBeYbFU1/XhcLBqmveq9y/t4nwvvoZ3wvtODmtm3g0A8CAkQjyEV0E4fa2xnuoDQQgAMFp+1Wh8dU5UHwhCAICFaG06mh5ZYQ/SiYiB19t+gCAEABgh9V46OJ1O5n6/lTKvt/0AQQgAMLr0ir6HEPJKsPWsIJ+d1MX/mO/qCQhCAICb8ucEFp0rPBmYc60G68aeSANBCADwM/Gh8KH3YuxJvlu11mq5fFhnYxVAEAIAc3I8Huu6XuFWLnnIpeM89txNBwhCAGDhysZms5n7Fi+3Wi4f7pngAZP77HKnNQAwEXPcA8aDEABBCAAAwPzYSwoAAEAQAgAAIAgBAABYvP8CDACQKVrV75R4RQAAAABJRU5ErkJggg==);
-      background-repeat: no-repeat;
-      background-position: bottom left;
-      margin-bottom: 112.5px;
-      padding-bottom: calc(112.5px + 30px) !important;
- }
-  @media (max-width: 992px) {
-      .conference-header {
-          background-position: bottom center;
-          margin-bottom: 90px;
-          padding-bottom: calc(90px + 30px) !important;
-     }
- }
-  @media (max-width: 600px) {
-      .conference-header {
-          background-position: bottom center;
-          margin-bottom: 60px;
-          padding-bottom: calc(60px + 30px) !important;
-     }
- }
-  .conference-content {
-      margin-top: -30px;
- }
-  .conference-header, .conference-content {
-      padding: 15px 50px;
- }
-  @media (max-width: 992px) {
-      .conference-header, .conference-content {
-          padding: 15px 30px;
-     }
- }
-  @media (max-width: 600px) {
-      .conference-header, .conference-content {
-          padding: 15px;
-     }
- }
-  .conference-title {
-      font-size: 32px;
-      margin-top: 0;
- }
-  @media (max-width: 992px) {
-      .conference-title {
-          font-size: 28px;
-     }
- }
-  @media (max-width: 600px) {
-      .conference-title {
-          font-size: 24px;
-     }
- }
-  .conference-picture-container {
-      position: absolute;
-      left: 0;
-      margin: 0 auto;
-      width: 100%;
- }
-  .conference-picture {
-      max-width: 225px;
-      width: 100%;
- }
-  .conference-picture + .conference-picture {
-      margin-left: -50px;
- }
-  @media (max-width: 992px) {
-      .conference-picture {
-          max-width: 180px;
-     }
-      .conference-picture + .conference-picture {
-          margin-left: -40px;
-     }
- }
-  @media (max-width: 600px) {
-      .conference-picture {
-          max-width: 120px;
-     }
-      .conference-picture + .conference-picture {
-          margin-left: -30px;
-     }
- }
-  .conference-presenter {
-      font-size: 24px;
-      margin-top: 0;
- }
-  @media (max-width: 992px) {
-      .conference-presenter {
-          font-size: 21px;
-     }
- }
-  @media (max-width: 600px) {
-      .conference-presenter {
-          font-size: 20px;
-     }
- }
-  @media (max-width: 992px) {
-      .conference-title, .conference-presenter, .conference-location, .conference-bio, .conference-resume, .conference-text {
-          text-align: center;
-     }
- }
-  .conference-presenter, .conference-location, .conference-text:not(:last-child) {
-      padding-bottom: 20px;
- }
-  .btn-modal-close {
-      background: rgba(44, 66, 81, 0.74);
-      color: #fff;
- }
-  .btn-modal-close:hover {
-      background: #2c4251;
-      color: #fff;
- }
 
  .keynote-text, .bolder {
    font-weight: bolder;
  }
-
-
-
- .modal-window {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
- }
-  .modal-window.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .modal-window > div {
-    width: 95%;
-    position: absolute;
-    height: 95%;
-    overflow: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-    background: #ffffff;
-    color: #333333;
-  }
 
   header {
     font-weight: bold;
@@ -526,32 +276,6 @@
     font-size: 150%;
     margin: 0 0 15px;
     color: #333333;
-  }
-
-.modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 70px;
-  text-decoration: none;
-}
-
-    .modal-close:hover {
-    color: #000;
-  }
-
-  .speakers img {
-    width: 200px;
-    object-fit: cover;
-    height: 200px;
-    float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 50%;
   }
 
   .forthcoming {
@@ -567,6 +291,64 @@
     padding: 0.5rem 0 0 0;
     vertical-align: top;
   }
+
+      /* BEGIN - FOOTER */
+      .row {
+        justify-content: center;
+      }
+
+      .partners {
+        background: #294350;
+        color: #fff;
+        padding-bottom: 50px;
+      }
+      
+      .partners-header {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .partner-divider {
+        border-top: 1px solid rgba(255, 255, 255, 0.21);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        width: 60%;
+      }
+
+      @media (max-width: 992px) {
+        .partner-divider {
+          width: 80%;
+        }
+      }
+
+      .partners h2 {
+        font-size: 2rem;
+      }
+
+      .partners h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      img.partner {
+        width: 100%;
+      }
+
+      .platinum {
+        color: #e5e4e2;
+      }
+
+      .or {
+        color: #ffd700;
+      }
+
+      .silver {
+        color: #C0C0C0;
+      }
+
+      .bronze {
+        color: #CD7F32;
+      }
+      /* END - FOOTER */
     </style>
   </head>
   <body>
@@ -583,12 +365,13 @@
         <img class="keynote-header" src="assets/keynote-header.png">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+            <!--<div class="col-sm-12 col-md-4 col-lg-3 text-center">
               
             </div>
             <div class="col-sm-12 col-md-8 col-lg-9">
               <h1 class="keynote-title text-primary"></h1>
-              <h3 class="keynote-subtitle text-accent uppercase"></h3>
+              <h3 class="keynote-subtitle text-accent uppercase"></h3>-->
+            <div class="col-12 text-center">
               <p class="keynote-text">
                 Avez-vous hâte de voir qui sera notre conférencier principal pour cette année?
                 <br>
@@ -599,10 +382,11 @@
         </div>
         <img class="keynote-footer" src="assets/keynote-footer.png">
       </div>
+
       <div class="summary">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-12 col-lg-8">
               <div>
                 <h1 class="title text-accent">
                   <i class="material-icons icon-margin">today</i>Événement
@@ -699,52 +483,87 @@
                   </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-              <h1 class="title text-accent">
-                <i class="material-icons icon-margin">location_on</i>Emplacement
-              </h1>
-              <h3 class="text-primary bolder uppercase">Delta Sherbrooke</h3>
-              <div>
-                <a class="text" href="https://goo.gl/maps/wRrZj14p5AF2" target="_blank">
-                
-                2685 Rue King Ouest<br>
-                Sherbrooke (Québec) J1L 1C1              
-                </a>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-12">
+                      <h1 class="title text-accent">
+                          <i class="material-icons icon-margin">location_on</i>Emplacement
+                        </h1>
+                        <h3 class="text-primary bolder uppercase">Delta Sherbrooke</h3>
+                        <div>
+                          <a class="text" href="https://goo.gl/maps/wRrZj14p5AF2" target="_blank">
+                          
+                          2685 Rue King Ouest<br>
+                          Sherbrooke (Québec) J1L 1C1              
+                          </a>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-12">
+                      <h1 class="title text-accent">
+                          <i class="material-icons">attach_money</i>Admission
+                        </h1>
+                        <h3 class="text-primary bolder uppercase">Prix à venir!</h3>
+                        <!--<h5 class="include"><b>Inclus</b></h5>
+                        <ul>
+                          <li>Laissez-passer pour la journée</li>
+                          <li>Dîner</li>
+                          <li>Collation et café</li>
+                          <li>Stationnement</li>
+                        </ul>-->
+                  </div>
               </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <h1 class="title text-accent">
-                <i class="material-icons">attach_money</i>Admission
-              </h1>
-              <h3 class="text-primary bolder uppercase">Prix à venir!</h3>
-              <!--<h5 class="include"><b>Inclus</b></h5>
-              <ul>
-                <li>Laissez-passer pour la journée</li>
-                <li>Dîner</li>
-                <li>Collation et café</li>
-                <li>Stationnement</li>
-              </ul>-->
+              
             </div>
           </div>
         </div>
       </div>
-      <!--
-        <div class="partners text-center">
-        <img class="partners-header" src="assets/partners-header.png">
-        <div class="container">
-          <h1 class="partners-title">Partenaires Platine</h1>
-          <hr class="partner-divider">
-          <div class="row">
-            <div class="col-sm-12"></div>
-          </div>
-          <h1 class="partners-title">Partenaires Or</h1>
-          <hr class="partner-divider">
-          <div class="row">
-            <div class="col-sm-12"></div>
+    </main>
+
+    <footer class="partners text-center">
+      <img class="partners-header" src="assets/partners-header.png">
+      <div class="container">
+        <h2>Partenaires</h2>
+        <h3 class="partners-title platinum">Platine</h3>
+        <div class="row">
+          <div class="col-6">
+              <a href="" rel="noopener" target="_blank">
+                <img class="partner" src="assets/partners/pyxis-studio-white-logo.png"/>
+              </a>
           </div>
         </div>
-      </div>-->
-    </main>
-    <footer></footer>
+        <hr class="partner-divider">
+        
+        <h3 class="partners-title or">Or</h3>
+        <div class="row">
+          <div class="col-4">
+              <a href="" rel="noopener" target="_blank">
+                <img class="partner" src="assets/partners/sherbrooke-innopole-white-logo.png"/>
+              </a>
+          </div>
+          <div class="col-4">
+            <a href="" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/sherweb-white-logo.png"/>
+            </a>
+          </div>
+          <div class="col-4">
+              <a href="" rel="noopener" target="_blank">
+                <img class="partner" src="assets/partners/udes-white-logo.png"/>
+              </a>
+            </div>
+        </div>
+        <!--<hr class="partner-divider">
+
+        <h3 class="partners-title silver">Argent</h3>
+        <div class="row">
+          <div class="col-3"></div>
+        </div>
+        <hr class="partner-divider">
+
+        <h3 class="partners-title bronze">Bronze</h3>
+        <div class="row">
+          <div class="col-2"></div>
+        </div>-->
+      </div>
+    </footer>
   </body>
 </html>
