@@ -252,8 +252,6 @@
       background: #294350 !important;
       color: white !important;
       cursor: pointer;
-      position: relative;
-      transform: scale(1.0125);
  }
   main .summary table td.clickable:not(.keynote) {
       height: 220px;
@@ -486,6 +484,89 @@
  .keynote-text, .bolder {
    font-weight: bolder;
  }
+
+
+
+ .modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+ }
+  .modal-window.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: 95%;
+    position: absolute;
+    height: 95%;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    color: #333333;
+  }
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+    .modal-close:hover {
+    color: #000;
+  }
+
+  .speakers img {
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+
+  .forthcoming {
+    font-style: italic;
+    color: #888;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .summary table td:first-child {
+    padding: 0.5rem 0 0 0;
+    vertical-align: top;
+  }
     </style>
   </head>
   <body>
@@ -527,7 +608,7 @@
                   <i class="material-icons icon-margin">today</i>Événement
                 </h1>
                 <h3 class="text-primary bolder uppercase">Vendredi 10 mai 2019</h3>
-                <h5 class="text-secondary bolder uppercase">De 9 h à 16 h</h5>
+                <h5 class="text-secondary bolder uppercase">De 8 h à 17 h</h5>
                 <p>
                   L'Agile Tour Sherbrooke est un événement annuel offrant l'opportunité d'assister 
                   a plusieurs conférences autour du sujet de la méthodologie Agile dans le domaine des TI.
@@ -538,12 +619,84 @@
                   <i class="material-icons icon-margin">schedule</i>Horaire des conférences
                 </h1>
                 <p>
-                  Après avoir reçu une vingtaine de soumissions d'excellente qualité pour des conférences, 
-                  le conseil d'administration se réunira prochainement afin de déterminer lesquels feront
-                  partis de l'Agile Tour Sherbrooke 2019.</p>
-                <p>Nous devrions être en mesure de publier les détails des conférences retenues à partir
-                  de la semaine du <b>17 mars 2019</b>. Restez des nôtres!
+                  Nous sommes présentement en train de concevoir l'horaire des conférences, celle-ci devrait
+                  donc être disponible sous peu! Toutefois, afin de vous faire patienter, nous vous dévoilerons
+                  à chaque jour au moins une conférence sur la 
+                  <a class="bold" href="liste-conferences.html">liste des conférences</a>.
+                    Restez des nôtres!
                 </p>
+
+                <div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Salle Sherweb</th>
+                          <th>Salle Sherbrooke Innopole</th>
+                          <th>Salle Université de Sherbrooke</th>
+                          <th>Atelier</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>8&nbsp;h&nbsp;45</td>
+                          <td colspan="4"><div class="title">Mot de bienvenue</div></td>
+                        </tr>
+                        <tr>
+                          <td>9&nbsp;h&nbsp;30</td>
+                          <td colspan="4"><div class="title forthcoming">Keynote - À venir</div></td>
+                        </tr>
+                        <tr>
+                          <td>10&nbsp;h&nbsp;15</td>
+                          <td colspan="4">Pause</td>
+                        </tr>
+                        <tr>
+                          <td>10&nbsp;h&nbsp;30</td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                        </tr>
+                        <tr>
+                          <td>11&nbsp;h&nbsp;45</td>
+                          <td colspan="4">Dîner</td>
+                        </tr>
+                        <tr>
+                          <td>12&nbsp;h&nbsp;45</td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                        </tr>
+                        <tr>
+                          <td>14&nbsp;h&nbsp;00</td>
+                          <td colspan="4">Pause</td>
+                        </tr>
+                        <tr>
+                          <td>14&nbsp;h&nbsp;15</td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                          <td><div class="title forthcoming">À venir</div></td>
+                        </tr>
+                        <tr>
+                            <td>15&nbsp;h&nbsp;30</td>
+                            <td colspan="4">Pause</td>
+                          </tr>
+                          <tr>
+                              <td>15&nbsp;h&nbsp;45</td>
+                              <td><div class="title forthcoming">À venir</div></td>
+                              <td><div class="title forthcoming">À venir</div></td>
+                              <td><div class="title forthcoming">À venir</div></td>
+                              <td><div class="title forthcoming">À venir</div></td>
+                            </tr>
+                        <tr>
+                          <td>17&nbsp;h</td>
+                          <td class="closure" colspan="4">Mot de la fin</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-4">
