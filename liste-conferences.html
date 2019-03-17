@@ -261,7 +261,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#CaroleRudzinski">⚓</a>
           <h2 id="CaroleRudzinski">Soyez créatif : Questionnez autrement</h2>
           <div>
@@ -294,7 +295,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#ChristianDroulers">⚓</a>
           <h2 id="ChristianDroulers">Faire évoluer un logiciel existant avec le Domain-Driven Design et l'Event Sourcing</h2>
           <div>
@@ -317,7 +319,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#DanielGiroux">⚓</a>
           <h2 id="DanielGiroux">Agile : Le triangle d’or ou comment engager le client (interne ou externe)</h2>
           <div>
@@ -340,7 +343,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#DaveJacques">⚓</a>
           <h2 id="DaveJacques">Ce projet dont vous êtes le héros</h2>
           <div>
@@ -364,7 +368,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#EricVeilleux">⚓</a>
           <h2 id="EricVeilleux">99 façons de garder le contrôle sur vos tests</h2>
           <div>
@@ -386,7 +391,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#FannyDesjardins_ValeryGermain">⚓</a>
           <h2 id="FannyDesjardins_ValeryGermain">Sortez l'innovation de la boîte!</h2>
           <div>
@@ -426,7 +432,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#Jean-FrançoisMorel">⚓</a>
           <h2 id="Jean-FrançoisMorel">User Stories - Guide de création et de découpage</h2>
           <div>
@@ -450,7 +457,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#Marc-AndreGaudreau_MartinBrochu">⚓</a>
           <h2 id="Marc-AndreGaudreau_MartinBrochu">Transformation agile à l’Université de Sherbrooke (au STI)</h2>
           <div>
@@ -479,7 +487,8 @@
             </div>
           </div>
         </div>
-        <div>
+
+        <div hidden>
           <a class="anchor" href="#PawelMysliwiec">⚓</a>
           <h2 id="PawelMysliwiec">Transformation organisationnelle Agile - Culture d'apprentissage en continu</h2>
           <div>
@@ -508,7 +517,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div hidden>
           <a class="anchor" href="#SophieBenjamin">⚓</a>
           <h2 id="SophieBenjamin">D’une équipe de tests à une chaîne de qualité organisationnelle!</h2>
           <div>
@@ -588,9 +597,11 @@
               "<ul>";
 
         var hasId = function(element) { return !!element.id; }
+        var isNotHidden = function(element) { return element.parentElement.hidden === false; }
         var allConferences = document.querySelectorAll('h2');
         allConferences = Array.from(allConferences);
         allConferences = allConferences.filter(hasId);
+        allConferences = allConferences.filter(isNotHidden);
 
         allConferences.forEach(function(conference) {
           var title = conference.textContent;
