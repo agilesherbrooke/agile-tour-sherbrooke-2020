@@ -50,6 +50,7 @@
         margin-top: 200px;
         max-width: 600px;
         width: 100%;
+        float: right;
       }
 
       @media (max-width: 480px) {
@@ -72,6 +73,30 @@
         }
       }
 
+      .btn {
+        float: right;
+        margin-top: 8px;
+        border-radius: 3px;
+        font-weight: 600;
+        height: 42px;
+        line-height: 28px;
+        max-width: 286px;
+        width: 100%;
+        z-index: 2;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 480px) {
+        .header-title .btn {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          margin: 0;
+          max-width: 480px;
+          border-radius: 0;
+        }
+      }
+
       header .header-footer {
         position: absolute;
         bottom: -5px;
@@ -79,6 +104,23 @@
         z-index: 0;
       }
       /* END - HEADER */
+
+      @media (min-width: 992px) {
+        .summary .row > div:first-of-type {
+          margin-bottom: 2rem;
+        }
+      }
+
+      @media (min-width: 576px) {
+        .row > div:first-of-type.col-sm-12 {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .summary .btn {
+        float: none;
+        max-width: 360px;
+      }
 
   main .keynote {
       background: #efefef;
@@ -273,8 +315,6 @@
   }
 
   h1 {
-    font-size: 150%;
-    margin: 0 0 15px;
     color: #333333;
   }
 
@@ -356,6 +396,7 @@
       <div class="container">
         <div class="header-title">
           <img src="assets/header-title.png">
+          <a class="btn btn-success uppercase" href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2019-58960067148" rel="noopener" target="_blank">Inscription</a>
         </div>
       </div>
       <img class="header-footer" src="assets/header-footer.png">
@@ -502,14 +543,24 @@
                       <h1 class="title text-accent">
                           <i class="material-icons">attach_money</i>Admission
                         </h1>
-                        <h3 class="text-primary bolder uppercase">Prix à venir!</h3>
-                        <!--<h5 class="include"><b>Inclus</b></h5>
+                        <h3 class="text-primary bolder uppercase">
+                          85 $ / PERSONNE *
+                        </h3>
+                        <h5 class="include"><b>Inclus</b></h5>
                         <ul>
                           <li>Laissez-passer pour la journée</li>
                           <li>Dîner</li>
                           <li>Collation et café</li>
                           <li>Stationnement</li>
-                        </ul>-->
+                        </ul>
+                        <p>
+                          Pour l'inscription régulière. 
+                          Consultez notre page 
+                          <a href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2019-58960067148" rel="noopener" target="_blank">EventBrite</a>
+                          pour l'<span class="bold">inscription hâtive</span> 
+                          et l'<span class="bold">inscription de groupe</span> (10 personnes et plus).
+                        </p>
+                        <a class="btn btn-success uppercase" href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2019-58960067148" rel="noopener" target="_blank">Inscription</a>
                   </div>
               </div>
               
