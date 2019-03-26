@@ -147,12 +147,13 @@
   main .keynote .keynote-picture {
       max-width: 270px;
       width: 100%;
+      border-radius: 50%;
  }
-  @media (max-width: 600px) {
-      main .keynote .keynote-picture {
-          max-width: 210px;
-     }
+
+ .keynote-subtitle {
+  text-align: center;
  }
+
   @media (max-width: 992px) {
       main .keynote .keynote-title, main .keynote .keynote-subtitle, main .keynote .keynote-text {
           text-align: center;
@@ -306,7 +307,7 @@
       margin-top: 2rem;
  }
 
- .keynote-text, .bolder {
+ .bolder {
    font-weight: bolder;
  }
 
@@ -406,18 +407,28 @@
         <img class="keynote-header" src="assets/keynote-header.png">
         <div class="container">
           <div class="row">
-            <!--<div class="col-sm-12 col-md-4 col-lg-3 text-center">
-              
+            <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+              <div class="square">
+                <img class="keynote-picture" src="assets/speakers/Alan Kezber.jpg">
+              </div>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-9">
-              <h1 class="keynote-title text-primary"></h1>
-              <h3 class="keynote-subtitle text-accent uppercase"></h3>-->
-            <div class="col-12 text-center">
-              <p class="keynote-text">
-                Avez-vous hâte de voir qui sera notre conférencier principal pour cette année?
-                <br>
-                Surveillez notre site Web ainsi que les médias sociaux, nous l'annoncerons prochainement!
-              </p>
+              <h1 class="keynote-title text-primary">Alan Kezber</h1>
+              <h5 class="keynote-title text-primary">Président-directeur général et fondateur de la compagnie Kezber</h5>
+              <h3 class="keynote-subtitle text-accent uppercase">Prendre le virage Agile </h3>
+              <div class="col-12 text-center">
+                <div class="keynote-text">
+                  <p>
+                    En bientôt 25 ans d’existence, Kezber a beaucoup évolué tant au niveau de son champs d’expertise, que de sa clientèle et donc de son offre de services. 
+                  </p>
+                  <p>
+                    Au départ axé principalement sur les services de soutien technique et l’administration de réseau, Kezber se spécialise maintenant également en développement d’applications sur mesure et en solutions cloud pour les PME. 
+                  </p>
+                  <p>
+                    Au cours des dernières années, Kezber a véritablement pris son envol en voyant son chiffre D’affaires et son nombre d’employé doubler. Cette croissance s’explique entre autres par la réalisation de projets de plus en plus importants. Ce n’était alors qu’une question de temps avant qu’Alan Kezber, toujours à l’affût des nouvelles technologies et des nouvelles tendances, ne se tourne vers la méthodologie Agile. Accompagné de son équipe de gestionnaires, il a entamé la transition vers cette nouvelle façon de gérer les projets. Après quelques balbutiements et quelques changements dans la structure de l’équipe, une nouvelle méthodologie de travail en est ressortie, empruntant les meilleurs principes de la gestion de projet Agile.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
