@@ -314,6 +314,7 @@
 
      td.clickable {
        padding: 0 !important;
+       position: relative;
      }
 
       td.clickable a  {
@@ -459,6 +460,48 @@
    white-space: pre-wrap;
 }
 
+.pastille {
+  position: absolute; bottom: 5; right: 40%;
+  width:40px; height:10px;
+  border-radius: 4px;
+
+}
+.pastillelegend {
+  display:inline-block; margin-right: 1em;
+  width:40px; height:10px;
+  border-radius: 4px;
+}
+
+.niveau1 {
+  background-color:#00cc00;
+}
+.niveau12 {
+  background: -webkit-linear-gradient(left, #00cc00 0%,#00cc00 50%,#cccc00 51%,#cccc00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -moz-linear-gradient(left, #00cc00 0%, #00cc00 50%, #cccc00 51%, #cccc00 100%); /* FF3.6-15 */
+  background: linear-gradient(to right, #00cc00 0%,#00cc00 50%,#cccc00 51%,#cccc00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cc00', endColorstr='#cccc00',GradientType=1 ); /* IE6-9 */
+}
+.niveau2 {
+  background-color:#cccc00;
+}
+.niveau23 {
+  background: -webkit-linear-gradient(left, #cccc00 0%,#cccc00 50%,#ff6600 51%,#ff6600 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -moz-linear-gradient(left, #cccc00 0%, #cccc00 50%, #ff6600 51%, #ff6600 100%); /* FF3.6-15 */
+  background: linear-gradient(to right, #cccc00 0%,#cccc00 50%,#ff6600 51%,#ff6600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccc00', endColorstr='#ff6600',GradientType=1 ); /* IE6-9 */
+}
+.niveau3 {
+  background-color:#ff6600;
+}
+.niveau4 {
+  background-color:#3399ff;
+}
+.niveau1234 {
+  background: -webkit-linear-gradient(left, #00cc00 0%,#00cc00 33%,#cccc00 34%,#cccc00 65%, #ff6600 66%, #ff6600 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -moz-linear-gradient(left, #00cc00 0%,#00cc00 33%,#cccc00 34%,#cccc00 65%, #ff6600 66%, #ff6600 100%); /* FF3.6-15 */
+  background: linear-gradient(to right, #00cc00 0%,#00cc00 33%,#cccc00 34%,#cccc00 65%, #ff6600 66%, #ff6600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cc00', endColorstr='#ff6600',GradientType=1 ); /* IE6-9 */
+}
       /* BEGIN - FOOTER */
       .row {
         justify-content: center;
@@ -712,10 +755,38 @@
                         </tr>
                         <tr>
                           <td>10&nbsp;h&nbsp;30</td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#Jean-FrançoisMorel"><div><div class="title">User Stories - Guide de création et de découpage</div><div class="presenter">Jean-François Morel</div><div class="company">Coveo</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#PawelMysliwiec"><div><div class="title">Transformation organisationnelle Agile - Culture d'apprentissage en continu</div><div class="presenter">Pawel Mysliwiec</div><div class="company">Pyxis</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#Marc-AndreGaudreau_MartinBrochu"><div><div class="title">Transformation agile à l'Université de Sherbrooke (au STI)</div><div class="presenter">Marc-André Gaudreau et Martin Brochu</div><div class="company">Université de Sherbrooke</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#CaroleRudzinski"><div><div class="title">Soyez créatif : questionnez autrement</div><div class="presenter">Carole Rudzinski</div><div class="company">carolerudzinski.com</div></div></a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#Jean-FrançoisMorel">
+                            <div >
+                              <div class="title">User Stories - Guide de création et de découpage</div>
+                              <div class="presenter">Jean-François Morel</div>
+                              <div class="company">Coveo</div>
+                              <div class="pastille niveau1" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#PawelMysliwiec">
+                            <div>
+                              <div class="title">Transformation organisationnelle Agile - Culture d'apprentissage en continu</div>
+                              <div class="presenter">Pawel Mysliwiec</div>
+                              <div class="company">Pyxis</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#Marc-AndreGaudreau_MartinBrochu">
+                            <div>
+                              <div class="title">Transformation agile à l'Université de Sherbrooke (au STI)</div>
+                              <div class="presenter">Marc-André Gaudreau et Martin Brochu</div>
+                              <div class="company">Université de Sherbrooke</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#CaroleRudzinski">
+                            <div>
+                              <div class="title">Soyez créatif : questionnez autrement</div>
+                              <div class="presenter">Carole Rudzinski</div>
+                              <div class="company">carolerudzinski.com</div>
+                              <div class="pastille niveau4" title=""></div>
+                            </div>
+                          </a></td>
                         </tr>
                         <tr>
                           <td>11&nbsp;h&nbsp;45</td>
@@ -723,10 +794,38 @@
                         </tr>
                         <tr>
                           <td>13&nbsp;h</td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#ChristianDroulers"><div><div class="title">Faire évoluer un logiciel existant avec le Domain-Driven Design et l'Event Sourcing</div><div class="presenter">Christian Droulers</div><div class="company">Akinox Solutions</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#SophieBenjamin"><div><div class="title">D'une équipe de tests à une chaîne de qualité organisationnelle!</div><div class="presenter">Sophie Benjamin</div><div class="company">Kezber</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DanielGiroux"><div><div class="title">Agile : le triangle d'or ou comment engager le client (interne ou externe)</div><div class="presenter">Daniel Giroux</div><div class="company">Axial</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#David-AlexandrePaquette"><div><div class="title">LEGO® SERIOUS PLAY® En mode Agile - Jouer sérieusement en toute agilité</div><div class="presenter">David-Alexandre Paquette</div><div class="company">IndustriousGeek</div></div></a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#ChristianDroulers">
+                            <div>
+                              <div class="title">Faire évoluer un logiciel existant avec le Domain-Driven Design et l'Event Sourcing</div>
+                              <div class="presenter">Christian Droulers</div>
+                              <div class="company">Akinox Solutions</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#SophieBenjamin">
+                            <div>
+                              <div class="title">D'une équipe de tests à une chaîne de qualité organisationnelle!</div>
+                              <div class="presenter">Sophie Benjamin</div>
+                              <div class="company">Kezber</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DanielGiroux">
+                            <div>
+                              <div class="title">Agile : le triangle d'or ou comment engager le client (interne ou externe)</div>
+                              <div class="presenter">Daniel Giroux</div>
+                              <div class="company">Axial</div>
+                              <div class="pastille niveau3" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#David-AlexandrePaquette">
+                            <div>
+                              <div class="title">LEGO® SERIOUS PLAY® En mode Agile - Jouer sérieusement en toute agilité</div>
+                              <div class="presenter">David-Alexandre Paquette</div>
+                              <div class="company">IndustriousGeek</div>
+                              <div class="pastille niveau4" title=""></div>
+                            </div>
+                          </a></td>
                         </tr>
                         <tr>
                           <td>14&nbsp;h&nbsp;15</td>
@@ -734,9 +833,30 @@
                         </tr>
                         <tr>
                           <td>14&nbsp;h&nbsp;20</td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#OlivierLafleur"><div><div class="title">DevOps et déploiement continu : on commence comment?</div><div class="presenter">Olivier Lafleur</div><div class="company">Elapse Technologies</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DaveJacques"><div><div class="title">Ce projet dont vous êtes le héros</div><div class="presenter">Dave Jacques</div><div class="company">Simplement Complexe</div></div></a></td>
-                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#MaximeBelanger_MohamedArezki"><div><div class="title">Agilité avec des équipes de composantes logiciels</div><div class="presenter">Maxime Belanger et Mohamed Arezki</div><div class="company">Banque Nationale / CGI</div></div></a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#OlivierLafleur">
+                            <div>
+                              <div class="title">DevOps et déploiement continu : on commence comment?</div>
+                              <div class="presenter">Olivier Lafleur</div>
+                              <div class="company">Elapse Technologies</div>
+                              <div class="pastille niveau1" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DaveJacques">
+                            <div>
+                              <div class="title">Ce projet dont vous êtes le héros</div>
+                              <div class="presenter">Dave Jacques</div>
+                              <div class="company">Simplement Complexe</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
+                          <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#MaximeBelanger_MohamedArezki">
+                            <div>
+                              <div class="title">Agilité avec des équipes de composantes logiciels</div>
+                              <div class="presenter">Maxime Belanger et Mohamed Arezki</div>
+                              <div class="company">Banque Nationale / CGI</div>
+                              <div class="pastille niveau2" title=""></div>
+                            </div>
+                          </a></td>
                           <td><div class="title forthcoming">À venir</div></td>
                         </tr>
                         <tr>
@@ -745,10 +865,38 @@
                           </tr>
                           <tr>
                               <td>15&nbsp;h&nbsp;45</td>
-                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#EricVeilleux"><div><div class="title">99 façons de garder le contrôle sur vos tests</div><div class="presenter">Eric Veilleux</div><div class="company">SherWeb</div></div></a></td>
-                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DamienBeaufils_DenisMigot"><div><div class="title">3 phases et 10 ateliers pour lancer puis maintenir un projet sain</div><div class="presenter">Damien Beaufils et Denis Migot</div><div class="company">Zenika</div></div></a></td>
-                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#AlexandreBeaudet"><div><div class="title">Le UX, est-ce vraiment utile? Le UX vu par un PO</div><div class="presenter">Alexandre Beaudet</div><div class="company">Université de Sherbrooke</div></div></a></td>
-                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#FannyDesjardins_ValeryGermain"><div><div class="title">Sortez l'innovation de la boîte!</div><div class="presenter">Fanny Desjardins et Valéry Germain</div><div class="company">CGI|Facilité</div></div></a></td>
+                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#EricVeilleux">
+                                <div>
+                                  <div class="title">99 façons de garder le contrôle sur vos tests</div>
+                                  <div class="presenter">Eric Veilleux</div>
+                                  <div class="company">SherWeb</div>
+                                  <div class="pastille niveau3" title=""></div>
+                                </div>
+                              </a></td>
+                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#DamienBeaufils_DenisMigot">
+                                <div>
+                                  <div class="title">3 phases et 10 ateliers pour lancer puis maintenir un projet sain</div>
+                                  <div class="presenter">Damien Beaufils et Denis Migot</div>
+                                  <div class="company">Zenika</div>
+                                  <div class="pastille niveau1" title=""></div>
+                                </div>
+                              </a></td>
+                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#AlexandreBeaudet">
+                                <div>
+                                  <div class="title">Le UX, est-ce vraiment utile? Le UX vu par un PO</div>
+                                  <div class="presenter">Alexandre Beaudet</div>
+                                  <div class="company">Université de Sherbrooke</div>
+                                  <div class="pastille niveau4" title=""></div>
+                                </div>
+                              </a></td>
+                              <td class="clickable"><a rel="noopener" target="_blank" href="liste-conferences.html#FannyDesjardins_ValeryGermain">
+                                <div>
+                                  <div class="title">Sortez l'innovation de la boîte!</div>
+                                  <div class="presenter">Fanny Desjardins et Valéry Germain</div>
+                                  <div class="company">CGI|Facilité</div>
+                                  <div class="pastille niveau4" title=""></div>
+                                </div>
+                              </a></td>
                             </tr>
                         <tr>
                           <td>17&nbsp;h</td>
@@ -798,6 +946,22 @@
                           et l'<span class="bold">inscription de groupe</span> (10 personnes et plus).
                         </p>
                         <a class="btn btn-success uppercase" href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2019-58960067148?aff=AgileTourSherbrooke" rel="noopener" target="_blank">Inscription</a>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-12">
+                      <h5 class="include"><b>Niveaux des conférences</b></h5>
+                      <p>
+                        Sur chacune des conférences, il y a une petite pastille pour indiquer le niveau de difficulté de la conférence.
+                      </p>
+                      <ul style="list-style: none">
+                          <li><span class="pastillelegend niveau1"></span>Niveau Débutant</li>
+                          <li><span class="pastillelegend niveau2"></span>Niveau Intermédiaire</li>
+                          <li><span class="pastillelegend niveau3"></span>Niveau Avancé</li>
+                          <li><span class="pastillelegend niveau4"></span>Pour tous les niveaux</li>
+
+
+
+
+                        </ul>
                   </div>
               </div>
 
