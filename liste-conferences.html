@@ -1,51 +1,51 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Agile Tour Sherbrooke</title>
+<head>
+  <meta charset="utf-8">
+  <title>Agile Tour Sherbrooke</title>
 
-    <meta name="description" content="Plus grand événement Agile à Sherbrooke présentant une série de conférences sur le thème de l'Agilité.">
-    <meta name="keywords" content="agile tour sherbrooke événement conférence">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plus grand événement Agile à Sherbrooke présentant une série de conférences sur le thème de l'Agilité.">
+  <meta name="keywords" content="agile tour sherbrooke événement conférence">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-112909617-2" async></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-112909617-2');
-    </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-112909617-2" async></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-112909617-2');
+  </script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <style type="text/css">
-      /* BEGIN - HEADER */
+  <style type="text/css">
+    /* BEGIN - HEADER */
+    header {
+      background: #000;
+      background: url(assets/header-background.png);
+      background-size: cover;
+      background-position-x: 33%;
+      position: relative;
+      height: 554px;
+    }
+
+    @media (max-width: 600px) {
       header {
-        background: #000;
-        background: url(assets/header-background.png);
-        background-size: cover;
-        background-position-x: 33%;
-        position: relative;
-        height: 554px;
+        height: 300px;
       }
+    }
 
-      @media (max-width: 600px) {
-        header {
-          height: 300px;
-        }
+    @media (min-width: 600px) and (max-width: 992px) {
+      header {
+        height: 410px;
       }
+    }
 
-      @media (min-width: 600px) and (max-width: 992px) {
-        header {
-          height: 410px;
-        }
-      }
-
-      header .header-title {
-        float: right;
-        z-index: 1;
-      }
+    header .header-title {
+      float: right;
+      z-index: 1;
+    }
 
       header .header-title img {
         margin-top: 200px;
@@ -54,313 +54,304 @@
         float: right;
       }
 
-      @media (max-width: 480px) {
-        header .header-title img {
-          margin-top: 80px;
-        }
+    @media (max-width: 480px) {
+      header .header-title img {
+        margin-top: 80px;
       }
+    }
 
-      @media (min-width: 480px) and (max-width: 600px) {
-        header .header-title img {
-          margin-top: 65px;
-          max-width: 450px;
-        }
+    @media (min-width: 480px) and (max-width: 600px) {
+      header .header-title img {
+        margin-top: 65px;
+        max-width: 450px;
       }
+    }
 
-      @media (min-width: 600px) and (max-width: 992px) {
-        header .header-title img {
-          margin-top: 135px;
-          max-width: 500px;
-        }
+    @media (min-width: 600px) and (max-width: 992px) {
+      header .header-title img {
+        margin-top: 135px;
+        max-width: 500px;
       }
+    }
 
-      .btn {
-        float: right;
-        margin-top: 8px;
-        border-radius: 3px;
-        font-weight: 600;
-        height: 42px;
-        line-height: 28px;
-        max-width: 286px;
-        width: 100%;
-        z-index: 2;
-        text-transform: uppercase;
-      }
+    .btn {
+      float: right;
+      margin-top: 8px;
+      border-radius: 3px;
+      font-weight: 600;
+      height: 42px;
+      line-height: 28px;
+      max-width: 286px;
+      width: 100%;
+      z-index: 2;
+      text-transform: uppercase;
+    }
 
-      @media (max-width: 480px) {
-        .header-title .btn {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          margin: 0;
-          max-width: 480px;
-          border-radius: 0;
-        }
+    @media (max-width: 480px) {
+      .header-title .btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        max-width: 480px;
+        border-radius: 0;
       }
+    }
 
-      header .header-footer {
-        position: absolute;
-        bottom: -5px;
-        width: 100%;
-        z-index: 0;
-      }
-      /* END - HEADER */
+    header .header-footer {
+      position: absolute;
+      bottom: -5px;
+      width: 100%;
+      z-index: 0;
+    }
+    /* END - HEADER */
 
-      /* BEGIN - MAIN */
-      h1 {
-        text-align: center;
-        color: #333333;
-        margin: 8px;
-      }
+    /* BEGIN - MAIN */
+    h1 {
+      text-align: center;
+      color: #333333;
+      margin: 8px;
+    }
 
-      h2 {
-        font-size: 2rem;
-      }
+    h2 {
+      font-size: 2rem;
+    }
 
-      nav {
-        border: 1px solid black;
-        padding: 0.5rem 1rem 0.5rem;
-        margin-bottom: 1rem;
-        background-color: rgb(238, 238, 238);
-      }
+    nav {
+      border: 1px solid black;
+      padding: 0.5rem 1rem 0.5rem;
+      margin-bottom: 1rem;
+      background-color: rgb(238, 238, 238);
+    }
 
       nav ul {
         margin: 0;
       }
 
-      #conferences > div {
-        background-color: #f1f1f1;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-        padding: 1rem;
-        margin-bottom: 2rem;
-        clear: both;
-      }
+    #conferences > div {
+      background-color: #f1f1f1;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      clear: both;
+    }
 
-      .anchor {
-        float: left;
-        margin-top: 0.5rem;
-        margin-right: 0.25rem;
-      }
+    .anchor {
+      float: left;
+      margin-top: 0.5rem;
+      margin-right: 0.25rem;
+    }
 
       .anchor:hover {
         text-decoration: none;
       }
 
-      .by {
-        font-size: 0.85rem;
-        margin-left: 1em;
-        margin-bottom: 0.5em;
-        display: block;
-        font-style: italic;
-      }
+    .by {
+      font-size: 0.85rem;
+      margin-left: 1em;
+      margin-bottom: 0.5em;
+      display: block;
+      font-style: italic;
+    }
 
-      .speakers h3 {
-        margin-bottom: 0;
-      }
+    .speakers h3 {
+      margin-bottom: 0;
+    }
 
-      .speakers > div {
-        clear: both;
-      }
+    .speakers > div {
+      clear: both;
+    }
 
-      .from {
-        font-size: 1.25rem;
-        display: block;
-        font-style: italic;
-      }
+    .from {
+      font-size: 1.25rem;
+      display: block;
+      font-style: italic;
+    }
 
-      .bold {
-        font-weight: bold;
-      }
+    .bold {
+      font-weight: bold;
+    }
 
-      .more {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
+    .more {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
 
       .more > a {
         margin-right: 0.25rem;
       }
 
-      main img {
-        width: 200px;
-        object-fit: cover;
-        height: 200px;
-        float: left;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 50%;
-      }
-      /* END - MAIN */
+    main img {
+      width: 200px;
+      object-fit: cover;
+      height: 200px;
+      float: left;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+    /* END - MAIN */
 
-      /* BEGIN - FOOTER */
-      .row {
-        justify-content: center;
-      }
+    /* BEGIN - FOOTER */
+    .row {
+      justify-content: center;
+    }
 
-      .partners {
-        background: #294350;
-        color: #fff;
-        padding-bottom: 50px;
-      }
+    .partners {
+      background: #294350;
+      color: #fff;
+      padding-bottom: 50px;
+    }
 
-      .partners-header {
-        width: 100%;
-        margin-bottom: 20px;
-      }
+    .partners-header {
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
+    .partner-divider {
+      border-top: 1px solid rgba(255, 255, 255, 0.21);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+      width: 60%;
+    }
+
+    @media (max-width: 992px) {
       .partner-divider {
-        border-top: 1px solid rgba(255, 255, 255, 0.21);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
-        width: 60%;
+        width: 80%;
       }
+    }
 
-      @media (max-width: 992px) {
-        .partner-divider {
-          width: 80%;
-        }
-      }
+    .partners h2 {
+      font-size: 2rem;
+    }
 
-      .partners h2 {
-        font-size: 2rem;
-      }
+    .partners h3 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
 
-      .partners h3 {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-      }
+    img.partner {
+      width: 100%;
+      object-fit: contain;
+    }
 
-      img.partner {
-        width: 100%;
-        object-fit: contain;
-      }
-
-      .platinum {
-        color: #e5e4e2;
-      }
+    .platinum {
+      color: #e5e4e2;
+    }
 
       .platinum img {
         max-height: 12vw;
       }
 
-      .or {
-        color: #ffd700;
-      }
+    .or {
+      color: #ffd700;
+    }
 
       .or img {
         max-height: 10vw;
       }
 
-      .silver {
-        color: #C0C0C0;
-      }
+    .silver {
+      color: #C0C0C0;
+    }
 
       .silver img {
         max-height: 8vw;
       }
 
-      .bronze {
-        color: #CD7F32;
-      }
+    .bronze {
+      color: #CD7F32;
+    }
 
       .bronze img {
         max-height: 6vw;
       }
-      /* END - FOOTER */
+    /* END - FOOTER */
 
-      .partners .col-6,
-      .partners .col-4,
-      .partners .col-3,
-      .partners .col-2 {
-        display: flex;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-title">
-          <img src="assets/header-title.png">
+    .partners .col-6,
+    .partners .col-4,
+    .partners .col-3,
+    .partners .col-2 {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-title">
+        <img src="assets/header-title.png">
+      </div>
+    </div>
+    <img class="header-footer" src="assets/header-footer.png">
+  </header>
+  <main class="container">
+    <h1>Liste des conférences</h1>
+    <p>
+      Vous trouverez ici la liste des conférences ainsi que leur détail.
+      Celles-ci sont classées par conférenciers, en ordre alphabétique.
+    </p>
+    <p>
+      Pour obtenir l'horaire de la journée, rendez-vous à l'<a class="bold" href="index.html">accueil</a>.
+    </p>
+    <div id="conferences">
+    </div>
+  </main>
+  <footer class="partners text-center">
+    <img class="partners-header" src="assets/partners-header.png">
+    <div class="container">
+      <h2 id="Partenaires">Partenaires</h2>
+      <div class="platinum">
+        <h3 class="partners-title platinum">Platine</h3>
+        <div class="row">
+          <div class="col-6">
+            <a href="https://pyxis-studio.com/fr/" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/pyxis-studio-logo.png" />
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="https://www.kezber.com/fr/" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/kezber-logo.png" />
+            </a>
+          </div>
         </div>
       </div>
-      <img class="header-footer" src="assets/header-footer.png">
-    </header>
-    <main class="container">
-      <h1>Liste des conférences</h1>
-      <p>
-        Vous trouverez ici la liste des conférences ainsi que leur détail.
-        Celles-ci sont classées par conférenciers, en ordre alphabétique.
-      </p>
-      <p>
-        Pour obtenir l'horaire de la journée, rendez-vous à l'<a class="bold" href="index.html">accueil</a>.
-      </p>
-      <div id="conferences">
+      <hr class="partner-divider">
+      <div class="or">
+        <h3 class="partners-title">Or</h3>
+        <div class="row">
+          <div class="col-4">
+            <a href="https://www.usherbrooke.ca/" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/universite-de-sherbrooke-logo.png" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.sherweb.com/fr/" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/sherweb-logo.png" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://sherbrooke-innopole.com/fr/" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/sherbrooke-innopole-logo.png" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.cgi.com/fr" rel="noopener" target="_blank">
+              <img class="partner" src="assets/partners/white/cgi-logo.png" />
+            </a>
+          </div>
+        </div>
       </div>
-    </main>
-    <footer class="partners text-center">
-        <img class="partners-header" src="assets/partners-header.png">
-        <div class="container">
-          <h2 id="Partenaires">Partenaires</h2>
-          <div class="platinum">
-            <h3 class="partners-title platinum">Platine</h3>
-            <div class="row">
-              <div class="col-6">
-                  <a href="https://pyxis-studio.com/fr/" rel="noopener" target="_blank">
-                    <img class="partner" src="assets/partners/white/pyxis-studio-logo.png"/>
-                  </a>
-              </div>
-              <div class="col-6">
-                <a href="https://www.kezber.com/fr/" rel="noopener" target="_blank">
-                  <img class="partner" src="assets/partners/white/kezber-logo.png"/>
-                </a>
-              </div>
-            </div>
+      <hr class="partner-divider">
+      <div class="silver">
+        <h3 class="partners-title silver">Argent</h3>
+        <div class="row">
+          <div class="col-6">
+            <p>Consultez le <a href="https://docs.google.com/document/d/19_sh979fHZXN1eeOAiu9Zwmn4hYoa0uBxcoEyvehS5Y" rel="noopener" target="_blank">plan de commandites</a> et communiquez avec nous à <a href="mailto:agiletour@agilesherbrooke.ca">agiletour@agilesherbrooke.ca</a> afin de réserver votre place comme commanditaire ou afin d'obtenir plus d’informations sur le plan de commandites.</p>
           </div>
-          <hr class="partner-divider">
-          <div class="or">
-            <h3 class="partners-title">Or</h3>
-            <div class="row">
-              <div class="col-4">
-                <a href="https://www.usherbrooke.ca/" rel="noopener" target="_blank">
-                  <img class="partner" src="assets/partners/white/universite-de-sherbrooke-logo.png" />
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.sherweb.com/fr/" rel="noopener" target="_blank">
-                  <img class="partner" src="assets/partners/white/sherweb-logo.png" />
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://sherbrooke-innopole.com/fr/" rel="noopener" target="_blank">
-                  <img class="partner" src="assets/partners/white/sherbrooke-innopole-logo.png" />
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.cgi.com/fr" rel="noopener" target="_blank">
-                  <img class="partner" src="assets/partners/white/cgi-logo.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="partner-divider">
-          <div class="silver">
-            <h3 class="partners-title silver">Argent</h3>
-            <div class="row">
-              <div class="col-6">
-                <p>Consultez le <a href="https://docs.google.com/document/d/19_sh979fHZXN1eeOAiu9Zwmn4hYoa0uBxcoEyvehS5Y" rel="noopener" target="_blank">plan de commandites</a> et communiquez avec nous à <a href="mailto:agiletour@agilesherbrooke.ca">agiletour@agilesherbrooke.ca</a> afin de réserver votre place comme commanditaire ou afin d'obtenir plus d’informations sur le plan de commandites.</p>
-              </div>
-            </div>
-            </div>
-          <hr class="partner-divider">
-          <div class="bronze">
-            <h3 class="partners-title">Bronze</h3>
-            <div class="row">
-              <div class="col-6">
-                <p>Consultez le <a href="https://docs.google.com/document/d/19_sh979fHZXN1eeOAiu9Zwmn4hYoa0uBxcoEyvehS5Y" rel="noopener" target="_blank">plan de commandites</a> et communiquez avec nous à <a href="mailto:agiletour@agilesherbrooke.ca">agiletour@agilesherbrooke.ca</a> afin de réserver votre place comme commanditaire ou afin d'obtenir plus d’informations sur le plan de commandites.</p>
-              </div>
-            </div>
-            </div>
-          </div>
-      </footer>
-  </body>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
